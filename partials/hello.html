@@ -1,0 +1,12 @@
+<div class="hello-content">
+    <h3>Hello from HTMX! 👋</h3>
+    <p>This content was loaded dynamically without a full page refresh.</p>
+    <p>HTMX makes it easy to add dynamic behavior to your static sites.</p>
+    
+    <!-- Example: Nested HTMX interaction -->
+    <button hx-get="/partials/more.html" 
+            hx-target="this" 
+            hx-swap="outerHTML">
+        Load More
+    </button>
+</div>

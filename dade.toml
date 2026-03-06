@@ -1,0 +1,16 @@
+[template]
+name = "web-site"
+description = "Vanilla HTML/CSS/JS with HTMX - simple static site"
+version = "1.0.0"
+author = "Alex Cabrera"
+url = "https://github.com/theydontwantyoutovibecode/website-made-in-dade"
+aliases = ["website", "static", "html"]
+
+[scaffold]
+exclude = [".git", "dade.toml", ".dade", ".DS_Store"]
+
+[serve]
+type = "static"
+
+[serve.static]
+root = "."

@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Server (legacy)
+.srv
+.srv.pid
+
+# dade
+.dade.pid
+
+# Logs
+*.log

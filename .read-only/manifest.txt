@@ -1,0 +1,4 @@
+# Reference libraries for vanilla HTML/CSS/JS + HTMX sites
+# These are cloned as shallow read-only copies for AI context
+
+https://github.com/bigskysoftware/htmx.git

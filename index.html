@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/lib/htmx.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">My Website</a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to My Website</h1>
+            <p>A simple, fast, and modern static site with HTMX for dynamic interactions.</p>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <div class="grid">
+                <article>
+                    <h3>Fast</h3>
+                    <p>No build step required. Just HTML, CSS, and JavaScript.</p>
+                </article>
+                <article>
+                    <h3>Dynamic</h3>
+                    <p>HTMX enables SPA-like interactions without a framework.</p>
+                </article>
+                <article>
+                    <h3>Simple</h3>
+                    <p>Easy to understand, modify, and deploy anywhere.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- HTMX Demo: Click to load content -->
+        <section class="demo">
+            <h2>HTMX Demo</h2>
+            <p>Click the button to load content dynamically:</p>
+            <button hx-get="/partials/hello.html" 
+                    hx-target="#demo-content" 
+                    hx-swap="innerHTML">
+                Load Content
+            </button>
+            <div id="demo-content" class="demo-box">
+                <p>Content will appear here...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. Built with HTMX.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
