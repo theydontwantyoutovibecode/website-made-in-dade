@@ -7,7 +7,7 @@ url = "https://github.com/theydontwantyoutovibecode/website-made-in-dade"
 aliases = ["website", "static", "html"]
 
 [scaffold]
-exclude = [".git", "dade.toml", ".dade", ".DS_Store"]
+exclude = [".git", "dade.toml", ".dade", ".DS_Store", "tailwind.config.js"]
 
 [serve]
 type = "static"
@@ -15,3 +15,7 @@ default_port = 8000
 
 [serve.static]
 root = "."
+
+[dev]
+setup = ["tailwindcss -i css/input.css -o css/style.css --watch"]
+background = ["tailwindcss -i css/input.css -o css/style.css --watch"]
