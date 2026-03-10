@@ -11,6 +11,7 @@ exclude = [".git", "dade.toml", ".dade", ".DS_Store"]
 
 [serve]
 type = "static"
+default_port = 8000
 
 [serve.static]
 root = "."
