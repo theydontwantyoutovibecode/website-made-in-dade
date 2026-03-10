@@ -1,4 +1,5 @@
-# Reference libraries for vanilla HTML/CSS/JS + HTMX sites
+# Reference libraries for vanilla HTML/CSS/JS + HTMX + Tailwind CSS sites
 # These are cloned as shallow read-only copies for AI context
 
 https://github.com/bigskysoftware/htmx.git
+https://github.com/tailwindlabs/tailwindcss.git
